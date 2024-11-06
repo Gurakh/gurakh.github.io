@@ -1,11 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import DarkMode from "../components/DarkMode.astro";
+import { getCollection } from "astro:content";
+
+const projects = await getCollection("projects");
 ---
 
 <Layout title="Work in progress">
   <main class="text-center">
     <DarkMode />
     <h1>Work in progress</h1>
+    {projects.map((project) => <p>{project.data.title}</p>)}
   </main>
 </Layout>
