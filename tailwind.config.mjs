@@ -6,6 +6,7 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
+				serif: ['Cormorant Garamond', ...defaultTheme.fontFamily.serif],
 				mono: ['Space Mono', ...defaultTheme.fontFamily.mono],
 			  },
 			colors: {

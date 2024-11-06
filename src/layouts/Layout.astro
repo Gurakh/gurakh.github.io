@@ -1,5 +1,8 @@
 ---
 import "@fontsource/space-mono";
+import "@fontsource/cormorant-garamond";
+
+import DarkMode from "../components/DarkMode.astro";
 
 interface Props {
   title: string;
@@ -19,5 +22,12 @@ const { title } = Astro.props;
   </head>
   <body>
     <slot />
+    <div class="font-serif">
+      Copyright 2024, Franck Da Silva. Feel free to <a
+        href="https://github.com/Gurakh/gurakh.github.io"
+        target="_blank">check the code</a
+      >
+      <DarkMode />
+    </div>
   </body>
 </html>
