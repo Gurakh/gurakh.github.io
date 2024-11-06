@@ -1,5 +1,5 @@
 ---
-title: "Project 2"
+title: "Project 2 (changed for test)"
 ---
 ## This is the project title
 
