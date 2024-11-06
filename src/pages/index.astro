@@ -9,12 +9,9 @@ const projects = await getCollection("projects");
 <Layout title="Work in progress">
   <main class="text-center">
     <DarkMode />
-    <h1>Work in progress</h1>
     {
       projects.map((project) => (
-        <p class="text-xl font-mono uppercase dark:text-white">
-          {project.data.title}
-        </p>
+        <p class="text-xl font-mono uppercase">{project.data.title}</p>
       ))
     }
   </main>
