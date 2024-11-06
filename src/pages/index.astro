@@ -10,6 +10,12 @@ const projects = await getCollection("projects");
   <main class="text-center">
     <DarkMode />
     <h1>Work in progress</h1>
-    {projects.map((project) => <p>{project.data.title}</p>)}
+    {
+      projects.map((project) => (
+        <p class="text-xl font-mono uppercase dark:text-white">
+          {project.data.title}
+        </p>
+      ))
+    }
   </main>
 </Layout>
