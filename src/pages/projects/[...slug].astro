@@ -20,7 +20,7 @@ const { Content } = await project.render();
 
 <Layout title={project.data.title}>
   <p>Other projects:</p>
-  <ul class="flex space-x-8">
+  <ul class="flex md:space-x-8 flex-col md:flex-row">
     {
       projects.map((project) => (
         <li class="text-md font-mono uppercase py-1">
