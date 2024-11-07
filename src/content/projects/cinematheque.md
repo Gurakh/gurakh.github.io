@@ -1,5 +1,6 @@
 ---
-title: "Project 1"
+title: "Cinémathèque Suisse"
+order: 2
 ---
 ## This is the project title
 

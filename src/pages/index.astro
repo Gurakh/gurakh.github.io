@@ -15,13 +15,15 @@ const projects = await getCollection("projects");
         Switzerland.<br /> Here's a showcase of the kind of work I've been doing
         these past years.
       </h1>
-      <div class="mt-32">
+      <ul class="mt-32">
         {
-          projects.map((project) => (
-            <p class="text-md font-mono uppercase">{project.data.title}</p>
-          ))
+          projects
+            .sort((a, b) => a.data.order - b.data.order)
+            .map((project) => (
+              <li class="text-md font-mono uppercase">{project.data.title}</li>
+            ))
         }
-      </div>
+      </ul>
     </div>
     <div class="font-serif py-3 flex items-center justify-between">
       <p>
@@ -29,7 +31,7 @@ const projects = await getCollection("projects");
         <a
           href="https://github.com/Gurakh/gurakh.github.io"
           target="_blank"
-          class="text-primary dark:text-secondary border-b border-primary dark:border-secondary"
+          class="dark:text-secondary border-b border-black dark:border-secondary"
           >check the code.
         </a>
       </p>

@@ -1,5 +1,6 @@
 ---
-title: "Project 2 (changed for test)"
+title: "La Liberté"
+order: 0
 ---
 ## This is the project title
 
