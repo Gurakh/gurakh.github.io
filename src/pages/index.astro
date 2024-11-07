@@ -17,14 +17,14 @@ const projects = (await getCollection("projects")).sort(
   <ul class="mt-10 md:mt-32">
     {
       projects.map((project) => (
-        <li class="text-md font-mono uppercase py-1">
+        <li class="text-md font-mono uppercase py-1 mb-2 md:mb-0">
           <a
             class="uppercase border-b border-transparent dark:hover:border-b-secondary hover:border-b-black"
             href={`/projects/${project.slug}`}
           >
             {project.data.title}
           </a>
-          <span class="text-xs">{project.data.subtitle}</span>
+          <span class="block text-xs md:inline">{project.data.subtitle}</span>
         </li>
       ))
     }
