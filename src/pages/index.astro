@@ -1,19 +1,39 @@
 ---
-import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
+
+import DarkMode from "../components/DarkMode.astro";
+import Layout from "../layouts/Layout.astro";
 
 const projects = await getCollection("projects");
 ---
 
 <Layout title="Work in progress">
-  <main>
-    <h1 class="font-serif text-3xl">
-      Hi, I'm Franck Da Silva,<br /> Full Stack Developer based in Lausanne, Switzerland
-    </h1>
-    {
-      projects.map((project) => (
-        <p class="text-md font-mono uppercase">{project.data.title}</p>
-      ))
-    }
-  </main>
+  <div class="flex flex-col min-h-screen">
+    <div class="flex-grow pt-48">
+      <h1 class="font-serif text-3xl">
+        Hi, I'm Franck Da Silva,<br /> a Full Stack Developer based in Lausanne,
+        Switzerland.<br /> Here's a showcase of the kind of work I've been doing
+        these past years.
+      </h1>
+      <div class="mt-32">
+        {
+          projects.map((project) => (
+            <p class="text-md font-mono uppercase">{project.data.title}</p>
+          ))
+        }
+      </div>
+    </div>
+    <div class="font-serif py-3 flex items-center justify-between">
+      <p>
+        Copyright 2024, Franck Da Silva. Feel free to
+        <a
+          href="https://github.com/Gurakh/gurakh.github.io"
+          target="_blank"
+          class="text-primary dark:text-secondary border-b border-primary dark:border-secondary"
+          >check the code.
+        </a>
+      </p>
+      <DarkMode />
+    </div>
+  </div>
 </Layout>
