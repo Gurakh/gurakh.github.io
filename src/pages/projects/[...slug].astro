@@ -10,16 +10,16 @@ export async function getStaticPaths() {
 
   return projects.map((project) => ({
     params: { slug: project.slug },
-    props: { project, projects },
+    props: { currentProject: project, projects },
   }));
 }
 
-const { project, projects } = Astro.props;
-const { Content } = await project.render();
+const { currentProject, projects } = Astro.props;
+const { Content } = await currentProject.render();
 ---
 
-<Layout title={project.data.title}>
-  <h1 class="font-serif text-3xl">{project.data.title}</h1>
+<Layout title={currentProject.data.title}>
+  <h1 class="font-serif text-3xl">{currentProject.data.title}</h1>
   <Content />
   <div class="mt-8">
     <p>Other projects:</p>
@@ -27,12 +27,17 @@ const { Content } = await project.render();
       {
         projects.map((project) => (
           <li class="text-md font-mono uppercase py-1">
-            <a
-              class="uppercase border-b border-transparent dark:hover:border-b-secondary hover:border-b-black"
-              href={`/projects/${project.slug}`}
-            >
-              {project.data.title}
-            </a>
+            {project.slug !== currentProject.slug && (
+              <a
+                class="uppercase border-b border-transparent dark:hover:border-b-secondary hover:border-b-black"
+                href={`/projects/${project.slug}`}
+              >
+                {project.data.title}
+              </a>
+            )}
+            {project.slug === currentProject.slug && (
+              <span class="uppercase line-through">{project.data.title}</span>
+            )}
           </li>
         ))
       }
