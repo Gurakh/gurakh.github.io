@@ -9,7 +9,7 @@ const projects = await getCollection("projects");
 
 <Layout title="Work in progress">
   <div class="flex flex-col min-h-screen">
-    <div class="flex-grow pt-48">
+    <div class="flex-grow pt-32">
       <h1 class="font-serif text-3xl">
         Hi, I'm Franck Da Silva,<br /> a Full Stack Developer based in Lausanne,
         Switzerland.<br /> Here's a showcase of the kind of work I've been doing
@@ -20,7 +20,9 @@ const projects = await getCollection("projects");
           projects
             .sort((a, b) => a.data.order - b.data.order)
             .map((project) => (
-              <li class="text-md font-mono uppercase">{project.data.title}</li>
+              <li class="text-md font-mono uppercase py-1">
+                {project.data.title}
+              </li>
             ))
         }
       </ul>
