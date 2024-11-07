@@ -21,7 +21,10 @@ const projects = await getCollection("projects");
             .sort((a, b) => a.data.order - b.data.order)
             .map((project) => (
               <li class="text-md font-mono uppercase py-1">
-                {project.data.title}
+                <button class="uppercase border-b border-transparent dark:hover:border-b-secondary hover:border-b-black">
+                  {project.data.title}
+                </button>
+                <span class="text-xs">{project.data.subtitle}</span>
               </li>
             ))
         }

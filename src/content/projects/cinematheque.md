@@ -1,5 +1,7 @@
 ---
 title: "Cinémathèque Suisse"
+subtitle: "fullstack, laravel"
+website: "https://live.cinematheque.ch"
 order: 2
 ---
 ## This is the project title

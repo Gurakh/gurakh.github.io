@@ -1,5 +1,6 @@
 ---
 title: "Arta"
+subtitle: "fullstack, next.js, wordpress"
 order: 1
 ---
 ## This is the project title
