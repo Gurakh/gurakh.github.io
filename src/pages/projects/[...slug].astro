@@ -33,7 +33,7 @@ const { Content } = await currentProject.render();
           <li class="text-md font-mono uppercase py-1 mb-2 md:mb-0">
             {project.slug !== currentProject.slug && (
               <a
-                class="uppercase border-b border-transparent dark:hover:border-b-secondary hover:border-b-black"
+                class="uppercase hover:underline underline-offset-4"
                 href={`/projects/${project.slug}`}
               >
                 {project.data.title}
