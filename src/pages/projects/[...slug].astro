@@ -18,7 +18,7 @@ const { currentProject, projects } = Astro.props;
 const { Content } = await currentProject.render();
 ---
 
-<Layout title={currentProject.data.title}>
+<Layout title={`Project: ${currentProject.data.title}`}>
  <a href="/" class="uppercase text-xs">← Back</a>
   <h1 class="font-serif text-3xl">{currentProject.data.title}</h1>
   <p class="font-mono uppercase text-xs">{currentProject.data.subtitle}</p>
