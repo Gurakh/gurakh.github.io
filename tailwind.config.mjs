@@ -10,7 +10,7 @@ export default {
 				mono: ['Space Mono', ...defaultTheme.fontFamily.mono],
 			  },
 			colors: {
-				primary: '#005B3D',
+				primary: '#003926',
 				secondary: '#FEFAE0',
 			},
 		},
