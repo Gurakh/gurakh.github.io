@@ -3,16 +3,4 @@ title: "Arta"
 subtitle: "fullstack, next.js, wordpress"
 order: 1
 ---
-## This is the project title
-
-Some succint description
-
-## Challenges
-
-Main features/challenges faced during development
-
-## Stack
-
-- This Library
-- This other Library
-- etc etc...
+## WIP.

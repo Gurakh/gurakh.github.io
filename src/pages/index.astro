@@ -1,46 +1,32 @@
 ---
 import { getCollection } from "astro:content";
 
-import DarkMode from "../components/DarkMode.astro";
 import Layout from "../layouts/Layout.astro";
 
-const projects = await getCollection("projects");
+const projects = (await getCollection("projects")).sort(
+  (a, b) => a.data.order - b.data.order
+);
 ---
 
-<Layout title="Work in progress">
-  <div class="flex flex-col min-h-screen">
-    <div class="flex-grow pt-8 md:pt-32">
-      <h1 class="font-serif text-3xl">
-        Hi, I'm Franck Da Silva,<br /> a Senior Full Stack Developer based in Lausanne,
-        Switzerland.<br /> Here's a showcase of the kind of work I've been doing
-        these past years.
-      </h1>
-      <ul class="mt-10 md:mt-32">
-        {
-          projects
-            .sort((a, b) => a.data.order - b.data.order)
-            .map((project) => (
-              <li class="text-md font-mono uppercase py-1">
-                <button class="uppercase border-b border-transparent dark:hover:border-b-secondary hover:border-b-black">
-                  {project.data.title}
-                </button>
-                <span class="text-xs">{project.data.subtitle}</span>
-              </li>
-            ))
-        }
-      </ul>
-    </div>
-    <div class="py-3 flex items-center justify-between">
-      <p class="text-sm">
-        Feel free to
-        <a
-          href="https://github.com/Gurakh/gurakh.github.io"
-          target="_blank"
-          class="dark:text-secondary border-b border-black dark:border-secondary"
-          >check the code.
-        </a>
-      </p>
-      <DarkMode />
-    </div>
-  </div>
+<Layout title="Homepage">
+  <h1 class="font-serif text-3xl">
+    Hi, I'm Franck Da Silva,<br /> a Senior Full Stack Developer based in Lausanne,
+    Switzerland.<br /> Here's a showcase of the kind of work I've been doing these
+    past years.
+  </h1>
+  <ul class="mt-10 md:mt-32">
+    {
+      projects.map((project) => (
+        <li class="text-md font-mono uppercase py-1">
+          <a
+            class="uppercase border-b border-transparent dark:hover:border-b-secondary hover:border-b-black"
+            href={`/projects/${project.slug}`}
+          >
+            {project.data.title}
+          </a>
+          <span class="text-xs">{project.data.subtitle}</span>
+        </li>
+      ))
+    }
+  </ul>
 </Layout>
