@@ -8,6 +8,7 @@ export default {
 			fontFamily: {
 				serif: ['Cormorant Garamond', ...defaultTheme.fontFamily.serif],
 				mono: ['Space Mono', ...defaultTheme.fontFamily.mono],
+				sans: ['Karla Variable', ...defaultTheme.fontFamily.sans],
 			  },
 			colors: {
 				primary: '#000000',
