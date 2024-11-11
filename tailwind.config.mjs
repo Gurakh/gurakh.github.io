@@ -18,9 +18,16 @@ export default {
 				DEFAULT: {
 					css: {
 						letterSpacing: '-0.025em',
+						lineHeight: '1.5rem',
 						h2: {
 							marginTop: '1em',
-							marginBottom: '0',
+							marginBottom: '0.25em',
+							letterSpacing: '-0.025em',
+							fontWeight: 'normal',
+						},
+						h3: {
+							marginTop: '1em',
+							marginBottom: '0.25em',
 							letterSpacing: '-0.025em',
 							fontWeight: 'normal',
 						},

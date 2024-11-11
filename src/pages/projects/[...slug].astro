@@ -20,7 +20,7 @@ const { Content } = await currentProject.render();
 
 <Layout title={`Project: ${currentProject.data.title}`}>
  <a href="/" class="uppercase text-xs">← Back</a>
-  <h1 class="font-serif text-3xl">{currentProject.data.title}</h1>
+  <h1 class="font-serif text-4xl">{currentProject.data.title}</h1>
   <p class="font-mono uppercase text-xs">{currentProject.data.subtitle}</p>
   {currentProject.data.website && (<p class="mt-6">
     <a class="flex items-center space-x-1" href={currentProject.data.website} target="_blank">
@@ -28,7 +28,7 @@ const { Content } = await currentProject.render();
       <svg class="w-3 h-3 dark:fill-secondary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h9a1 1 0 0 1 0 2H4v16h16v-8a1 1 0 0 1 2 0Zm-.618-9.923A.991.991 0 0 0 21 2h-5a1 1 0 0 0 0 2h2.586l-7.293 7.293a1 1 0 1 0 1.414 1.414L20 5.414V8a1 1 0 0 0 2 0V3a1.01 1.01 0 0 0-.077-.382 1 1 0 0 0-.541-.541Z"/></svg>
     </a>
   </p>)}
-  <div class="prose dark:text-white dark:prose-headings:text-secondary mt-4">
+  <div class="prose prose-li:marker:text-primary dark:prose-li:marker:text-secondary dark:text-white dark:prose-headings:text-secondary mt-4">
     <Content />
   </div>
   <hr class="my-4">
