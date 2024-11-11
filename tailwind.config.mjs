@@ -16,24 +16,24 @@ export default {
 			},
 			typography: {
 				DEFAULT: {
-				css: {
-					letterSpacing: '-0.025em',
-					h2: {
-						marginTop: '1em',
-						marginBottom: '0',
+					css: {
 						letterSpacing: '-0.025em',
-						fontWeight: 'normal',
+						h2: {
+							marginTop: '1em',
+							marginBottom: '0',
+							letterSpacing: '-0.025em',
+							fontWeight: 'normal',
+						},
+						p: {
+							margin: 0,
+						},
+						li: {
+							margin: 0,
+						},
+						img: {
+							margin: '0.75em 0',
+						}
 					},
-					p: {
-						margin: 0,
-					},
-					li: {
-						margin: 0,
-					},
-					img: {
-						margin: '0.75em 0',
-					}
-				},
 				},
 			},
 		},
