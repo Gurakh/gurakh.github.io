@@ -25,7 +25,7 @@ For this to work, the code is divided between three git repositories: the websit
 - Tailwind CSS
 - Vite
 
-### Specific elements
+### Specific libraries
 
 - Poool (Paywall)
 - Auth.js (authentication and session)
