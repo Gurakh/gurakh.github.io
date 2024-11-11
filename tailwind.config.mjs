@@ -14,6 +14,28 @@ export default {
 				primary: '#000000',
 				secondary: '#ffffff',
 			},
+			typography: {
+				DEFAULT: {
+				css: {
+					letterSpacing: '-0.025em',
+					h2: {
+						marginTop: '1em',
+						marginBottom: '0',
+						letterSpacing: '-0.025em',
+						fontWeight: 'normal',
+					},
+					p: {
+						margin: 0,
+					},
+					li: {
+						margin: 0,
+					},
+					img: {
+						margin: '0.75em 0',
+					}
+				},
+				},
+			},
 		},
 	},
 	plugins: [require('@tailwindcss/typography')],
