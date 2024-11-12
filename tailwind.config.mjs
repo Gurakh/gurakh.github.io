@@ -24,7 +24,8 @@ export default {
 							marginBottom: '0.25em',
 							letterSpacing: 0,
 							fontWeight: 'normal',
-							fontFamily: 'Cormorant Garamond'
+							fontFamily: 'Cormorant Garamond',
+							fontSize: '1.75em'
 						},
 						h3: {
 							marginTop: '1em',
