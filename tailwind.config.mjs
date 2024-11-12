@@ -22,8 +22,9 @@ export default {
 						h2: {
 							marginTop: '1em',
 							marginBottom: '0.25em',
-							letterSpacing: '-0.025em',
+							letterSpacing: 0,
 							fontWeight: 'normal',
+							fontFamily: 'Cormorant Garamond'
 						},
 						h3: {
 							marginTop: '1em',
