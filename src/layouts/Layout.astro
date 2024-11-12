@@ -29,7 +29,10 @@ const { title } = Astro.props;
   <body>
     <main class="px-6 mx-auto md:px-8 max-w-screen-xl">
       <div class="flex flex-col min-h-dvh">
-        <div class="flex-grow pt-10 md:pt-32 pb-4 md:pb-16">
+        <div class="flex-grow pb-4 md:pb-16">
+          <div class="py-3 text-right text-sm mb-0 md:mb-32">
+            <a class="dark:text-secondary underline underline-offset-2 text-sm" href="https://www.linkedin.com/in/franckds/" target="_blank">contact</a>
+          </div>
           <slot />
         </div>
         <div class="py-3 flex items-center justify-between">
