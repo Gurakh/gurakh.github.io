@@ -7,7 +7,7 @@ order: 0
 
 ![Site la Liberté](../../assets/la-liberte.jpeg)
 
-La liberté is a well known newspaper based in Fribourg. I was the main developer for the complete frontend revamp of the website in TypeScript.
+La liberté is a well known newspaper based in Fribourg. I was the main developer at Antistatique for the complete frontend revamp of the website in TypeScript.
 
 ## Challenges
 
