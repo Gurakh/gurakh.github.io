@@ -6,4 +6,17 @@ order: 4
 
 ![Application Hitch](../../assets/hitch.jpeg)
 
-## WIP.
+WIP.
+
+## Challenges
+
+## Stack
+
+### Main stack
+
+- Symfony
+- PostgreSQL
+
+### Specific libraries
+
+- Stripe SDK

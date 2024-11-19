@@ -7,4 +7,14 @@ order: 3
 
 ![Site CER](../../assets/cer.jpeg)
 
-## WIP.
+WIP.
+
+## Challenges
+
+## Stack
+
+- Astro.js | React
+- TypeScript
+- Zod
+- Tailwind CSS
+- TinaCMS
