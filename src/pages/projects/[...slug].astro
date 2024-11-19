@@ -19,7 +19,7 @@ const { Content } = await currentProject.render();
 ---
 
 <Layout title={`Project: ${currentProject.data.title}`}>
- <a href="/" class="uppercase text-xs flex items-center space-x-1"><span>←</span><span>Back</span></a>
+ <a href="/" class="uppercase text-xs flex items-center space-x-1"><span class="leading-none">←</span><span>Back</span></a>
   <h1 class="font-serif text-4xl">{currentProject.data.title}</h1>
   <p class="font-mono uppercase text-xs">{currentProject.data.subtitle}</p>
   {currentProject.data.website && (<p class="mt-6">
