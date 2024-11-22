@@ -7,7 +7,7 @@ order: 2
 
 ![Site Cinémathèque](../../assets/cinematheque.jpeg)
 
-The Swiss Cinémathèque is one of the most important film archive in the world, with more than 85,000 movies and documentaries. I mainly worked for the live part of the website (schedule of next projections).
+The Swiss Cinémathèque is one of the most important film archive in the world, with more than 85,000 movies and documentaries. I mainly worked for the live part of the website (schedule for next projections).
 
 ## Challenges
 

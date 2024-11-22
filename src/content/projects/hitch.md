@@ -10,11 +10,11 @@ Hitch was a native application which aimed to connect athletes and coaches. Athl
 
 ## Challenges
 
-It was really a great challenge to work on this API because there was a lot of complex business logic to handle. The goal was also to make it fast so all of the heavy lifting was done asynchronously in queues using the Symfony Messenger component. At the time, we used doctrine for the transport, while having in mind we might change it later for something faster if needed.<br><br>
+It really was a great challenge to work on this API because there was a lot of complex business logic to handle. The goal was also to make it fast so all of the heavy lifting was done asynchronously in queues using the Symfony Messenger component. At the time, we used doctrine for the transport, while having in mind we might change it later for something faster if needed.<br><br>
 
 All responses were standardized using the Seralizer component so it was really easy and reliable to use in the client part. We also tweaked some things in Symfony to make it a bit more Laravel like, like using Carbon for all dates, and having Doctrine returning instances of CarbonImmutable instead of DateTime.<br><br>
 
-Also, all of the code was extensively tested with fixtures with PHPUnit.
+Also, all of the code was extensively tested with fixtures and PHPUnit.
 
 ## Stack
 
