@@ -24,7 +24,7 @@ const projects = (await getCollection("projects")).sort(
           >
             {project.data.title}
           </a>
-          <span class="block text-xs md:inline">{project.data.subtitle}</span>
+          <p class="text-xs">{project.data.subtitle}</p>
         </li>
       ))
     }

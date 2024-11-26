@@ -44,10 +44,10 @@ const { Content } = await currentProject.render();
               >
                 {project.data.title}
               </a>
-              <span class="block text-xs md:inline">{project.data.subtitle}</span>
+              <p class="text-xs">{project.data.subtitle}</p>
             )}
             {project.slug === currentProject.slug && (
-              <span class="uppercase line-through">{project.data.title}</span>
+              <p class="uppercase line-through">{project.data.title}</p>
             )}
           </li>
         ))
